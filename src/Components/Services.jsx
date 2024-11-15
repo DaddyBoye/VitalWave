@@ -1,19 +1,13 @@
 import React from "react";
 
 import { RiMicroscopeLine } from "react-icons/ri";
-
 import { MdHealthAndSafety } from "react-icons/md";
 import { FaHeartbeat } from "react-icons/fa";
-import Button from "../Layouts/Button";
 import ServicesCard from "../Layouts/ServicesCard";
 
 const Services = () => {
-  const icon1 = (
-    <RiMicroscopeLine size={35} className=" text-backgroundColor" />
-  );
-  const icon2 = (
-    <MdHealthAndSafety size={35} className=" text-backgroundColor" />
-  );
+  const icon1 = <RiMicroscopeLine size={35} className=" text-backgroundColor" />;
+  const icon2 = <MdHealthAndSafety size={35} className=" text-backgroundColor" />;
   const icon3 = <FaHeartbeat size={35} className=" text-backgroundColor" />;
 
   return (
@@ -24,15 +18,26 @@ const Services = () => {
             Our Services
           </h1>
           <p className=" mt-2 text-center lg:text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            quidem.
+            Dedicated to accessible healthcare, especially in remote and rural communities.
           </p>
         </div>
       </div>
       <div className=" flex flex-col lg:flex-row gap-5 pt-14">
-        <ServicesCard icon={icon1} title="Lab Test" />
-        <ServicesCard icon={icon2} title="Health Check" />
-        <ServicesCard icon={icon3} title="Heart Health" />
+        <ServicesCard 
+          icon={icon1} 
+          title="Portable Lab Testing" 
+          description="Vital on-site testing services tailored for remote areas, providing timely diagnostics without the need for distant travel."
+        />
+        <ServicesCard 
+          icon={icon2} 
+          title="Comprehensive Health Assessments" 
+          description="Health assessments conducted locally to deliver essential care to underserved populations."
+        />
+        <ServicesCard 
+          icon={icon3} 
+          title="Portable ECG Monitoring" 
+          description="Our portable ECG devices empower caregivers to capture and transmit heart data instantly, enabling timely cardiac assessments for patients in remote areas."
+        />
       </div>
     </div>
   );

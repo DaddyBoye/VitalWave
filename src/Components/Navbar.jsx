@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
+import logo from "../assets/img/DALL_E-2024-11-14-23.26.32-A-logo-design-for-a-heart-pulse-monitoring-device-called-_Vital-Wave_-removebg-preview 2.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -28,8 +29,9 @@ const Navbar = () => {
       <div>
         <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
-            <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className="text-2xl font-semibold">WellnessVista.</h1>
+            <Link to="home" spy={true} smooth={true} duration={500} className="flex items-center">
+              <img src={logo} alt="" className="w-10 h-10"/>
+              <h1 className="text-2xl font-semibold">VitalWave</h1>
             </Link>
           </div>
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
