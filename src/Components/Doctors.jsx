@@ -15,9 +15,9 @@ const CommunityImpact = () => {
       location: "Offinso, Ashanti Region, Ghana",
       population: "25,000+",
       livesImpacted: "1,000+",
-      implementationDate: "Since 2022",
+      implementationDate: "Since 2024",
       successStory: "Reduced cardiac diagnosis time from 14 days to just 24 hours",
-      healthcarePartner: "Arogya Rural Health Center",
+      healthcarePartner: "Offinso Rural Health Center",
     },
     {
       img: doc2,
@@ -26,7 +26,7 @@ const CommunityImpact = () => {
       livesImpacted: "3,200+",
       implementationDate: "Since 2023",
       successStory: "Connected 15 remote villages to cardiac specialists",
-      healthcarePartner: "Afya Community Health Network",
+      healthcarePartner: "Ejisu Community Health Center",
     },
     {
       img: doc3,
@@ -34,8 +34,8 @@ const CommunityImpact = () => {
       population: "12,000+",
       livesImpacted: "2,800+",
       implementationDate: "Since 2023",
-      successStory: "First-ever ECG services in 8 riverside communities",
-      healthcarePartner: "Saúde na Floresta Initiative",
+      successStory: "First-ever ECG services in Ayeduase and its environs",
+      healthcarePartner: "Ayeduase Health Clinic",
     },
   ];
 

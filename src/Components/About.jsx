@@ -17,7 +17,7 @@ const About = () => {
         </p>
       </div>
       <div className="w-full lg:w-3/4">
-        <img className="rounded-lg" src={img} alt="img" />
+        <img className="rounded-lg transform transition-transform duration-300 hover:scale-105" src={img} alt="img" />
       </div>
     </div>
   );

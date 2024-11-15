@@ -69,7 +69,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Doctors
+              Communities
             </Link>
             <Link
               to="blogs"
@@ -143,7 +143,7 @@ const Navbar = () => {
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Doctors
+            Communities
           </Link>
           <Link
             to="blogs"
