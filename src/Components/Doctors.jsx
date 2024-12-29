@@ -172,7 +172,7 @@ const CommunityImpact = () => {
                   </div>
 
                   {/* View Details Button */}
-                  <button className="w-full mt-6 bg-backgroundColor text-white py-3 rounded-lg hover:bg-green-600 transition-colors duration-200">
+                  <button className="w-full mt-6 bg-backgroundColor text-white py-3 rounded-lg hover:bg-white hover:text-backgroundColor transition-colors duration-200">
                     View Impact Story
                   </button>
                 </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
               to="home"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="flex items-center"
             >
               <img src={logo} alt="" className="w-10 h-10" />
@@ -45,52 +45,52 @@ const Navbar = () => {
               to="home"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="group relative transition-all cursor-pointer"
             >
               Home
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
 
             <Link
               to="services"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="group relative transition-all cursor-pointer"
             >
               Services
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="doctors"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="group relative transition-all cursor-pointer"
             >
               Communities
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="blogs"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="group relative transition-all cursor-pointer"
             >
               Blogs
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="about"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               className="group relative transition-all cursor-pointer"
             >
               About Us
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
           </nav>
           <div className="hidden lg:flex">
