@@ -51,16 +51,7 @@ const Navbar = () => {
               Home
               <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="group relative transition-all cursor-pointer"
-            >
-              About Us
-              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
-            </Link>
+
             <Link
               to="services"
               spy={true}
@@ -89,6 +80,16 @@ const Navbar = () => {
               className="group relative transition-all cursor-pointer"
             >
               Blogs
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="group relative transition-all cursor-pointer"
+            >
+              About Us
               <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
           </nav>
