@@ -2,7 +2,14 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ArrowLeft, ArrowRight, Users, Heart, Clock, MapPin } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Users,
+  Heart,
+  Clock,
+  MapPin,
+} from "lucide-react";
 
 import doc1 from "../assets/img/doc1.jpg";
 import doc2 from "../assets/img/doc2.jpg";
@@ -16,7 +23,8 @@ const CommunityImpact = () => {
       population: "25,000+",
       livesImpacted: "1,000+",
       implementationDate: "Since 2024",
-      successStory: "Reduced cardiac diagnosis time from 14 days to just 24 hours",
+      successStory:
+        "Reduced cardiac diagnosis time from 14 days to just 24 hours",
       healthcarePartner: "Offinso Rural Health Center",
     },
     {
@@ -78,12 +86,12 @@ const CommunityImpact = () => {
             Communities Transformed
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover how our ECG technology is revolutionizing cardiac care in remote
-            communities around the world, bringing essential healthcare to those who
-            need it most.
+            Discover how our ECG technology is revolutionizing cardiac care in
+            remote communities around the world, bringing essential healthcare
+            to those who need it most.
           </p>
         </div>
-        
+
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-4 mt-8">
           <button
@@ -91,14 +99,14 @@ const CommunityImpact = () => {
             className="p-3 rounded-full bg-white shadow-lg hover:bg-blue-50 transition-colors duration-200 group"
             aria-label="Previous slide"
           >
-            <ArrowLeft className="w-6 h-6 text-blue-600 group-hover:scale-110 transition-transform duration-200" />
+            <ArrowLeft className="w-6 h-6 text-backgroundColor group-hover:scale-110 transition-transform duration-200" />
           </button>
           <button
             onClick={() => slider.current.slickNext()}
             className="p-3 rounded-full bg-white shadow-lg hover:bg-blue-50 transition-colors duration-200 group"
             aria-label="Next slide"
           >
-            <ArrowRight className="w-6 h-6 text-blue-600 group-hover:scale-110 transition-transform duration-200" />
+            <ArrowRight className="w-6 h-6 text-backgroundColor group-hover:scale-110 transition-transform duration-200" />
           </button>
         </div>
       </div>
@@ -128,17 +136,19 @@ const CommunityImpact = () => {
                   {/* Stats Grid */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center gap-2">
-                      <Users className="w-5 h-5 text-blue-600" />
+                      <Users className="w-5 h-5 text-backgroundColor" />
                       <div>
                         <p className="text-sm text-gray-600">Population</p>
                         <p className="font-semibold">{community.population}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Heart className="w-5 h-5 text-blue-600" />
+                      <Heart className="w-5 h-5 text-backgroundColor" />
                       <div>
                         <p className="text-sm text-gray-600">Lives Impacted</p>
-                        <p className="font-semibold">{community.livesImpacted}</p>
+                        <p className="font-semibold">
+                          {community.livesImpacted}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -162,7 +172,7 @@ const CommunityImpact = () => {
                   </div>
 
                   {/* View Details Button */}
-                  <button className="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                  <button className="w-full mt-6 bg-backgroundColor text-white py-3 rounded-lg hover:bg-green-600 transition-colors duration-200">
                     View Impact Story
                   </button>
                 </div>

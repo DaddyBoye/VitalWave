@@ -25,12 +25,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-10 text-white">
+    <div className="fixed w-full z-10 text-white">
       <div>
         <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
-            <Link to="home" spy={true} smooth={true} duration={500} className="flex items-center">
-              <img src={logo} alt="" className="w-10 h-10"/>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="flex items-center"
+            >
+              <img src={logo} alt="" className="w-10 h-10" />
               <h1 className="text-2xl font-semibold">VitalWave</h1>
             </Link>
           </div>
@@ -40,50 +46,55 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
+              className="group relative transition-all cursor-pointer"
             >
               Home
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="about"
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
+              className="group relative transition-all cursor-pointer"
             >
               About Us
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="services"
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
+              className="group relative transition-all cursor-pointer"
             >
               Services
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="doctors"
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
+              className="group relative transition-all cursor-pointer"
             >
               Communities
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
             <Link
               to="blogs"
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
+              className="group relative transition-all cursor-pointer"
             >
               Blogs
+              <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
             </Link>
           </nav>
           <div className="hidden lg:flex">
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-white text-green-700 px-4 py-2 rounded-md hover:bg-green-700 hover:text-white transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Contact Us
@@ -92,7 +103,7 @@ const Navbar = () => {
 
           {showForm && <Contact closeForm={closeForm} />}
 
-          <div className=" lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             {menu ? (
               <AiOutlineClose size={28} onClick={handleChange} />
             ) : (
@@ -110,7 +121,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Home
@@ -120,7 +131,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             About Us
@@ -130,7 +141,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Services
@@ -140,7 +151,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Communities
@@ -150,12 +161,12 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Blogs
           </Link>
-          <div className=" lg:hidden">
+          <div className="lg:hidden">
             <button
               className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}

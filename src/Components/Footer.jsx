@@ -8,12 +8,19 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <div className="flex items-center pb-4">
-            <img src={logo} alt="" className="w-10 h-10"/>
-            <h1 className="items-center font-semibold text-xl my-auto">VitalWave</h1>
+            <img src={logo} alt="" className="w-10 h-10" />
+            <h1 className="items-center font-semibold text-xl my-auto">
+              VitalWave
+            </h1>
           </div>
-          
+
           <p className=" text-sm">
-            We’re a small, passionate team at VitalWave, driven by the mission to make healthcare more accessible in remote areas. Our team brings together individuals with backgrounds in healthcare, technology, and community outreach. Together, we’re focused on using simple, effective portable ECG devices to help local caregivers provide timely cardiac care to those who need it most.
+            We’re a small, passionate team at VitalWave, driven by the mission
+            to make healthcare more accessible in remote areas. Our team brings
+            together individuals with backgrounds in healthcare, technology, and
+            community outreach. Together, we’re focused on using simple,
+            effective portable ECG devices to help local caregivers provide
+            timely cardiac care to those who need it most.
           </p>
         </div>
         <div>
@@ -24,7 +31,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               About
             </Link>
@@ -33,7 +40,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               Services
             </Link>
@@ -42,7 +49,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               Communities
             </Link>
@@ -56,7 +63,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               Lab Test
             </Link>
@@ -65,7 +72,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               Health Check
             </Link>
@@ -74,7 +81,7 @@ const Footer = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-green-600 transition-all cursor-pointer"
             >
               Heart Health
             </Link>
@@ -97,7 +104,7 @@ const Footer = () => {
       </div>
       <div>
         <p className=" text-center py-4">
-        Copyright © 2024 - All right reserved By
+          Copyright © 2024 - All right reserved By
           <span className=" text-hoverColor"> VitalWave</span>
         </p>
       </div>
